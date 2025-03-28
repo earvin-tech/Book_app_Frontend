@@ -1,0 +1,28 @@
+.profile-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-stats span {
+    margin: 5px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.recent-activity, .currently-reading {
+    margin-top: 20px;
+}
