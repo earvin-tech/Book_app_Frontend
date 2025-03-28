@@ -1,23 +1,22 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import BookDescription from './pages/BookDescription';
+import ReadingProgressTracker from './ReadingProgessTracker';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <h1>Welcome to the Book App</h1>
-        <a href="http://localhost:5000/login">
-          <button id='loginBtn'>Log In</button>
-        </a>
-        <a href="http://localhost:5000/register" target="_blank">
-          <button id="signupBtn">Sign Up</button>
-        </a>
-      </div>
-    
-    </>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/book/:id" element={<BookDescription />} />
+                <Route path="/reading-progress" element={<ReadingProgressTracker />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;
