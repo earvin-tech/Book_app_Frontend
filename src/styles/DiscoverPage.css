@@ -1,0 +1,190 @@
+.discover-page {
+    padding: 20px;
+    background-color: #f7f1ed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    background-color: #64403c;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem; 
+    margin: 0;
+  }
+  
+  .book-section {
+    margin-bottom: 40px;
+  }
+  
+  .book-section h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 15px;
+    color: #64403c;
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .book-item {
+    width: 300px;
+    background-color: #e3d8cd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-cover {
+    background-color: #64403c;
+    height: 180px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    width: 100%; /* Ensures it scales */
+  }
+  
+  .book-details {
+    padding: 10px;
+  }
+  
+  .book-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #64403c;
+  }
+  
+  .book-author {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .book-rating {
+    font-size: 1.2rem;
+    color: #f59e0b;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .book-description {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .discover-btn {
+    background-color: #64403c;
+    color: white;
+    font-size: 1.4rem;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .discover-btn:hover {
+    background-color: #4c2f2a;
+  }
+  
+  
+  .footer {
+    background-color: #64403c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  
+  @media (max-width: 1200px) {
+    .book-item {
+      width: 45%; 
+    }
+  
+    h1 {
+      font-size: 2.5rem; 
+    }
+  
+    h2 {
+      font-size: 2rem; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .book-item {
+      width: 100%; 
+      max-width: 500px;
+    }
+  
+    h1 {
+      font-size: 2rem; 
+    }
+  
+    .book-title {
+      font-size: 1.4rem; 
+    }
+  
+    .book-author {
+      font-size: 1.2rem; 
+    }
+  
+    .book-description {
+      font-size: 1.2rem; 
+    }
+  
+    .discover-btn {
+      font-size: 1.2rem; 
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 15px;
+    }
+  
+    .book-item {
+      width: 100%; 
+    }
+  
+    h1 {
+      font-size: 1.8rem; 
+    }
+  
+    .book-title {
+      font-size: 1.2rem; 
+    }
+  
+    .book-description {
+      font-size: 1rem; 
+    }
+  
+    .book-rating {
+      font-size: 1rem; 
+    }
+  
+    .discover-btn {
+      font-size: 1rem; 
+      padding: 8px 15px;
+    }
+  }
+  
