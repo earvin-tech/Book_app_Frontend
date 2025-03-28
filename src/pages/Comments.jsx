@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "../styles/Comments.css";
 
 function Comments() {
     const [bookDetails, setBookDetails] = useState({
